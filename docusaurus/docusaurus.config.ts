@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Advertising Intelligence',
+  tagline: 'Unified PPC reporting for easy ad performance insights',
+  favicon: 'img/adintel-logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'vendasta', // Usually your GitHub org/user name.
+  projectName: 'adintel-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -54,12 +54,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/adintel-logo.svg',
     navbar: {
       title: 'Advertising Intelligence',
       logo: {
         alt: 'Advertising Intelligence Logo',
-        src: 'img/logo.svg',
+        src: 'img/adintel-logo.svg',
       },
       items: [
         {
@@ -82,39 +82,47 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Advertising Intelligence',
-              to: '/docs/index',
+              label: 'Overview',
+              to: '/docs/overview',
+            },
+            {
+              label: 'Advertisements',
+              to: '/docs/advertisements',
+            },
+            {
+              label: 'Analytics',
+              to: '/docs/analytics',
+            },
+            {
+              label: 'Settings',
+              to: '/docs/settings',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Resources',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Help Center',
+              href: 'https://help.vendasta.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+              label: 'Community',
+              href: 'https://community.vendasta.com',
+            }
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'About Vendasta',
+              href: 'https://www.vendasta.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Vendasta Technologies Inc.`,
     },
     prism: {
       theme: prismThemes.github,

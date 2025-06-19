@@ -21,3 +21,40 @@
   align-items: center;
   justify-content: center;
 }
+
+.testimonialSection {
+  padding: 4rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.testimonial {
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.testimonial cite {
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.additionalFeatures {
+  padding: 4rem 0;
+}
+
+.featureCard {
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+}
+
+.featureCard h3 {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
