@@ -14,11 +14,9 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          White-label PPC reporting software
+          {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">
-          Advertising Intelligence brings your clients' PPC and digital ad campaigns from multiple platforms under one roof for easy comparison. Get the metrics that matter the most, automate reporting, and find out what's making your clients money.
-        </p>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -35,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Advertising Intelligence - White-label PPC Reporting Software"
-      description="Unified PPC reporting for easy ad performance insights. Track and analyze multiple PPC campaigns from different ad platforms in one place.">
+      title={siteConfig.title}
+      description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
