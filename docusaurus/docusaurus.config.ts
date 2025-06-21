@@ -72,11 +72,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -86,47 +81,13 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Overview',
+              label: 'Getting started',
               to: '/docs/overview',
-            },
-            {
-              label: 'Advertisements',
-              to: '/docs/advertisements',
-            },
-            {
-              label: 'Analytics',
-              to: '/docs/analytics',
-            },
-            {
-              label: 'Settings',
-              to: '/docs/settings',
-            },
-          ],
-        },
-        {
-          title: 'Resources',
-          items: [
-            {
-              label: 'Help Center',
-              href: 'https://help.vendasta.com',
-            },
-            {
-              label: 'Community',
-              href: 'https://community.vendasta.com',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'About Vendasta',
-              href: 'https://www.vendasta.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Vendasta Technologies Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,

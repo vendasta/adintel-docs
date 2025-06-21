@@ -6,45 +6,38 @@ import styles from './styles.module.css';
 type FeatureItem = {
   title: string;
   description: ReactNode;
-  icon: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Multi-platform Digital Ad Reporting',
-    icon: '📊',
+    title: 'Serve Multi-location',
     description: (
       <>
-        Track and analyze multiple PPC campaigns from different ad platforms, for both multi-location and single-location businesses. Report on Google Search and Display Ads, YouTube ads, Facebook ads, Instagram ads, and more.
+        Better serve your multi-location clients by providing a high-level overview of PPC ad campaign performance across locations.
       </>
     ),
   },
   {
-    title: 'Automated Reporting',
-    icon: '🤖',
+    title: 'Management Markup',
     description: (
       <>
-        Cut down on overhead with automated reporting. Advertising Intelligence provides your clients with real-time performance reporting across their favorite ad networks. Keep your clients in the know without lifting a finger.
+        Include your management fee in your client's spend budget so their final cost is clear. Set your markup per client and be sure your services are reflected in their final reporting.
       </>
     ),
   },
   {
-    title: 'Smart Comparison Tools',
-    icon: '📈',
+    title: 'White-label Fulfillment',
     description: (
       <>
-        Look at your advertising data with confidence. Smart insights and comparison tools help you become the expert at interpreting what types of ads are giving your clients the best results.
+        Regardless of your agency's experience or size, our team of strategists are able to fulfill and deliver. Use our great white labelled team in conjunction with Advertising Intelligence.
       </>
     ),
   },
 ];
 
-function Feature({title, description, icon}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <div className={styles.featureIcon}>{icon}</div>
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
@@ -53,7 +46,7 @@ function Feature({title, description, icon}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
