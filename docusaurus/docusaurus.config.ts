@@ -46,6 +46,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: '/',
           // editUrl: 'https://github.dev/vendasta/adintel-docs',
         },
         blog: false,
