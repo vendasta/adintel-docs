@@ -28,3 +28,17 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Minimal styling for card-link click area and spacing */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link .card {
+  height: 100%;
+}
+
+.row .col {
+  margin-bottom: 1rem;
+}
