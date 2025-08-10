@@ -26,7 +26,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'vendasta', // Usually your GitHub org/user name.
+  organizationName: 'adintel',
   projectName: 'adintel-docs', // Usually your repo name.
 
   onBrokenLinks: 'warn',
@@ -47,7 +47,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          // editUrl: 'https://github.dev/vendasta/adintel-docs',
+          // editUrl: '',
         },
         blog: false,
         theme: {
